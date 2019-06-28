@@ -3,10 +3,10 @@ using namespace std;
 
 int main()
 {
-     int itemnum,quantity,optionnum;
-    float bill,total,price;
-    string itemsize,option,yon,order;
-    bill=0, optionnum=0, quantity=0 , total=0 ;
+int itemnum,quantity,optionnum;
+float bill,total,price;
+string itemsize,option,yon,order;
+bill=0, optionnum=0, quantity=0 , total=0 ;
 cout<<"Welcome to our Pizza restaurant!" <<endl;
 do{
 cout<<"Please select one of items"<<endl;
@@ -16,7 +16,7 @@ cout<<"3- MARGHERITA - S=35/ M=70/ L=95"<<endl;
 cout<<"4- CHEESE LOVERS - S=60.96/ M=87.75/ L=113.16"<<endl;
 cout<<"5- SEA FOOD LOVERS - S= 64.47/ M=94.30/ L=123.25"<<endl;
 cin>>itemnum;
- switch (itemnum==1)
+switch (itemnum==1)
 {
  case 1:
         cout <<"you select SUPER SUPREME "<<endl;
@@ -96,7 +96,6 @@ if (itemnum==5)
 }
 
 cout<<"Do you want extra topping ?"<<endl;
-
 cin>>yon;
 if (yon=="yes")
 {
@@ -110,7 +109,7 @@ if (yon=="yes")
         //optionnum=10;
 }
 else
-    optionnum=0;
+optionnum=0;
 total=quantity*(price+optionnum);
 bill+=total;
 cout<<"do you want another item ?"<<endl;
